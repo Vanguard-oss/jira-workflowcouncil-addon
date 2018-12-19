@@ -27,7 +27,7 @@ clean install deploy
 
 * Once the JAR file is created, install the add-on in your Jira Software instance. 
 * Create a user with the username "jira-workflow-council-user" to be the author of the workflow changes.
-* Enable logging, if desired, for the following packages (either temporarily via the admin screen, or permanently by editing Jira Software's server logging configuration).
+* Enable logging to <jira home>/log/atlassian-jira.log, if desired, for the following packages (either temporarily via the admin screen, or permanently by editing Jira Software's server logging configuration).
   * com.vanguard.jira.workflowcouncil.app
   * com.vanguard.jira.workflowcouncil.domain
 
@@ -59,5 +59,5 @@ To resolve this, restart your instance. We are working on a fix and will publish
 
 In order to find out who has published workflow in a period when the add-on is disabled, you can use the following command.
 ```
-grep "publishDraft" ${JIRA_HOME}/log/atlassian-jira.log
+grep "publishDraft" <jira home>/log/atlassian-jira.log
 ```
