@@ -25,7 +25,11 @@ When Vanguard was working on updating our Jira Software instance from 7.1.6 to 7
 clean install deploy
 ```
 
-* Once the JAR file is created, install the add-on in your Jira Software instance. Create a user with the username "jira-workflow-council-user" to be the author of the workflow changes.
+* Once the JAR file is created, install the add-on in your Jira Software instance. 
+* Create a user with the username "jira-workflow-council-user" to be the author of the workflow changes.
+* Enable logging, if desired, for the following packages (either temporarily via the admin screen, or permanently by editing Jira Software's server logging configuration).
+  * com.vanguard.jira.workflowcouncil.app
+  * com.vanguard.jira.workflowcouncil.domain
 
 ## Known issues
 
